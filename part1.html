@@ -1,0 +1,138 @@
+<style>
+
+    .box-red{
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+        background: blue;
+    }
+
+    .box-blue{
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+        background: red;
+    }
+
+    .box-green{
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+        background: green;
+    }
+
+    .box{
+        border: 5px solid black;
+    }
+
+    .flex-box{
+        display: flex;
+        border: 5px solid black;
+    }
+
+    .row-reverse{
+        display: flex;
+        flex-direction:row-reverse;
+        border: 5px solid black;
+    }
+
+    .row-direction{
+        display: flex;
+        flex-direction:column-reverse;
+        border: 5px solid black;
+    }
+
+    .justify-center{
+        display: flex;
+        justify-content: center;
+        border: 5px solid black;
+    }
+
+    .justify-evenly{
+        display: flex;
+        justify-content: space-evenly;
+        border: 5px solid black;
+    }
+
+    .flex-square{
+        display:flex;
+        justify-content: space-evenly;
+        flex-direction:column;
+        height:150px;
+        width:150px;
+        border:2px solid black;
+    }
+
+    .justify-evenly-noborder{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+</style>
+
+<body>
+    <h1>CSS Flexbox Notes</h1>
+    <p>CSS-flexboxes are used to space content within a container. This page uses colored boxes (dividers), but it works with any content.</p>
+
+    <p>The below squares are in a normal divider.</p>
+    <div class="box">
+        <div class="box-red"></div>
+        <div class="box-blue"></div>
+    </div>
+    <br>
+
+    <p>The below squares are in a divider with display set to flex.</p>
+    <div class="flex-box">
+        <div class="box-red"></div>
+        <div class="box-blue"></div>
+    </div>
+
+    <p>Below uses the row-reverse flex direction.</p>
+    <div class="row-reverse">
+        <div class="box-red"></div>
+        <div class="box-blue"></div>
+    </div>
+
+    <p>Below uses the column-reverse flex direction.</p>
+    <div class="row-direction">
+        <div class="box-red"></div>
+        <div class="box-blue"></div>
+    </div>
+
+    <p>Below justifies the content center.</p>
+    <div class="justify-center">
+        <div class="box-red"></div>
+        <div class="box-blue"></div>
+    </div>
+
+    <p>Below justifies the content center.</p>
+    <div class="justify-evenly">
+        <div class="box-red"></div>
+        <div class="box-blue"></div>
+        <div class="box-green"></div>
+    </div>
+
+    <p>The below box is an outter flexbox with inner flexboxes, and each inner box has three paragaphs. All are justified to space evenly.</p>
+    <div class="flex-square">
+
+        <div class="justify-evenly-noborder">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+        </div>
+
+        <div class="justify-evenly-noborder">
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+        </div>
+
+        <div class="justify-evenly-noborder">
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+        </div>
+
+    </div>
+
+</body>
