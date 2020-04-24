@@ -1,0 +1,45 @@
+<style>
+
+    .flex-square{
+        display:flex;
+        justify-content: space-evenly;
+        flex-direction:column;
+        height:150px;
+        width:150px;
+        border:2px solid black;
+    }
+
+    .justify-evenly-noborder{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+</style>
+
+<body>
+    <h1>CSS Flexbox Notes part 2</h1>
+
+    <p>The below box is an outter flexbox with inner flexboxes, and each inner box has three paragaphs. All are justified to space evenly.</p>
+    <div class="flex-square">
+
+        <div class="justify-evenly-noborder">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+        </div>
+
+        <div class="justify-evenly-noborder">
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+        </div>
+
+        <div class="justify-evenly-noborder">
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+        </div>
+
+    </div>
+
+</body>
